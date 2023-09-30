@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "MuseoModerno", cursive;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  background-color: #220507;
+  height: 50px;
+}
+nav ul {
+  width: 40%;
+  display: flex;
+  justify-content: space-evenly;
+}
+nav ul a {
+  color: #b36fac;
+  list-style: none;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+nav ul a:hover {
+  color: #cac3e8;
+}
+
+#hero {
+  width: 90%;
+  margin: 40px auto;
+  grid-template-columns: 1.2fr 50%;
+  grid-area: "hero-header image-background";
+  display: grid;
+  gap: 25px;
+}
+#hero .hero-header {
+  margin: auto;
+  color: #220507;
+  border-radius: 25px;
+}
+#hero .hero-header h1 {
+  font-size: 2em;
+}
+#hero .hero-header h1 span {
+  font-size: 1.8em;
+  color: #8d1721;
+}
+#hero .hero-header p {
+  margin: 30px auto;
+  font-weight: bolder;
+}
+#hero .hero-header button {
+  background-color: #8d1721;
+  width: 300px;
+  border: 0;
+  border-radius: 10px;
+  color: #b36fac;
+  font-size: 1.2em;
+  margin: 30px auto;
+  padding: 10px 20px;
+}
+#hero .hero-header button:hover {
+  color: #cac3e8;
+}
+#hero .image-background {
+  background-color: transparent;
+  border-radius: 25px;
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
+}
+#hero .image-background h4 {
+  left: 10%;
+}
+#hero .image-background h4 .hero-image {
+  transform: translate3d(-20%, -25%, 100px);
+  transition: 0.5s;
+}
+#hero .image-background h4 .hero-image:hover {
+  transform: rotate(10deg) scale(1.6);
+  transition: 0.3s;
+}/*# sourceMappingURL=main.css.map */

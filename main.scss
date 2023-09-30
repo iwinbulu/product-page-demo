@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "MuseoModerno", cursive;
+}
+
+// Color Theme
+$primaryColor: #8d1721;
+$secondaryColor: #220507;
+$tertiaryColor: #cac3e8;
+$textColor: #b36fac;
+
+// .logo {
+//   width: 0.1px;
+//   align-items: center;
+// }
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  background-color: $secondaryColor;
+  height: 50px;
+  ul {
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+    a {
+      color: $textColor;
+      list-style: none;
+      text-decoration: none;
+      font-size: 1.2rem;
+    }
+    a:hover {
+      color: $tertiaryColor;
+    }
+  }
+}
+
+#hero {
+  width: 90%;
+  margin: 40px auto;
+  grid-template-columns: 1.2fr 50%;
+  grid-area: "hero-header image-background";
+  display: grid;
+  gap: 25px;
+  .hero-header {
+    margin: auto;
+    color: $secondaryColor;
+    border-radius: 25px;
+    h1 {
+      font-size: 2em;
+      span {
+        font-size: 1.8em;
+        color: $primaryColor;
+      }
+    }
+    p {
+      margin: 30px auto;
+      font-weight: bolder;
+    }
+    button {
+      background-color: $primaryColor;
+      width: 300px;
+      border: 0;
+      border-radius: 10px;
+      //   box-shadow: ;
+      color: $textColor;
+      font-size: 1.2em;
+      margin: 30px auto;
+      padding: 10px 20px;
+    }
+    button:hover {
+      color: $tertiaryColor;
+    }
+  }
+  .image-background {
+    background-color: transparent;
+    border-radius: 25px;
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+    h4 {
+      left: 10%;
+
+      .hero-image {
+        transform: translate3d(-20%, -25%, 100px);
+        transition: 0.5s;
+      }
+      .hero-image:hover {
+        transform: rotate(10deg) scale(1.6);
+        transition: 0.3s;
+      }
+    }
+  }
+}
